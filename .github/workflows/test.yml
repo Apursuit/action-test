@@ -1,0 +1,14 @@
+name: 使用ubuntu自带python打印hello world
+
+on:
+  workflow_dispatch:   # 手动触发
+
+jobs:
+  print-hello-world:
+    name: 打印hello world
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: 打印 Hello World
+        run: |
+          python3 -c "print('Hello World')"
