@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: 打印 Hello World
         run: |
-          python3 -c "print('Hello World')"
+          python3 hello.py
